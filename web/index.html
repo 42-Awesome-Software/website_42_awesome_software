@@ -23,14 +23,76 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="website_42_awesome_software">
+  <meta name="apple-mobile-web-app-title" content="42 Awesome Software">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>website_42_awesome_software</title>
+  <!-- Open Graph & SEO tags -->
+  <meta property="og:title" content="42 Awesome Software" />
+  <meta
+    property="og:description"
+    content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito."
+  />
+  <meta property="og:image" content="share.png" />
+  <meta name="twitter:title" content="42 Awesome Software" />
+  <meta
+    name="twitter:description"
+    content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito."
+  />
+  <meta name="twitter:image" content="share.png" />
+  <meta name="twitter:card" content="summary_large_image" />  
+
+  <title>42 Awesome Software</title>
   <link rel="manifest" href="manifest.json">
+
+  <style type="text/css">
+    body {
+      background-color: #fbcf03;
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .loader {
+      border: 6px solid #121212;
+      border-radius: 50%;
+      border-left: 6px solid #fafafa;
+      width: 40px;
+      height: 40px;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 
   <script>
     // The value below is injected by flutter build, do not touch.
@@ -40,6 +102,9 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <div class="loading">
+    <div class="loader"></div>
+  </div>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
